@@ -1,0 +1,59 @@
+---
+ # Hashicorp boxes are used by default as per vms.yaml, but there are options
+ # for other boxes in the boxes.yaml file.
+vms:
+  #======================================#
+  # Puppet Master machine                #
+  #======================================#
+  - name: "master.inf.puppet.vm"
+    box: "tse-master-virtualbox"
+    roles: [ "master" ]
+
+  #======================================#
+  # Jenkins machine                      #
+  #======================================#
+  - name: "jenkins.inf.puppet.vm"
+    box: "puppetlabs/centos-7.2-64-nocm"
+    roles: [ "posix_agent" ]
+
+  #======================================#
+  # General-purpose machines, Portland   #
+  #======================================#
+  - name: "centos6a.pdx.puppet.vm"
+    box: "puppetlabs/centos-6.6-64-nocm"
+    roles: [ "posix_agent" ]
+
+  - name: "centos7a.pdx.puppet.vm"
+    box: "puppetlabs/centos-7.2-64-nocm"
+    roles: [ "posix_agent" ]
+
+  - name: "ubuntu1404a.pdx.puppet.vm"
+    box: "puppetlabs/ubuntu-14.04-64-nocm"
+    roles: [ "posix_agent" ]
+
+  - name: "server2012r2a.pdx.puppet.vm"
+    box: "windows-server-2012r2-v3"
+    roles: [ "windows_agent" ]
+
+  #======================================#
+  # General-purpose machines, Sydney     #
+  #======================================#
+  - name: "centos6b.syd.puppet.vm"
+    box: "puppetlabs/centos-6.6-64-nocm"
+    roles: [ "posix_agent" ]
+    autostart: false
+
+  - name: "centos7b.syd.puppet.vm"
+    box: "puppetlabs/centos-7.2-64-nocm"
+    roles: [ "posix_agent" ]
+    autostart: false
+
+  - name: "ubuntu1404b.syd.puppet.vm"
+    box: "puppetlabs/ubuntu-14.04-64-nocm"
+    roles: [ "posix_agent" ]
+    autostart: false
+
+  - name: "server2012r2b.syd.puppet.vm"
+    box: "windows-server-2012r2-v3"
+    roles: [ "windows_agent" ]
+    autostart: false

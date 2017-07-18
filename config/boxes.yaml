@@ -1,0 +1,5 @@
+# Hashicorp boxes are used by default as per vms.yaml, but there are options for other boxes in the boxes.yaml file.
+---
+# Boxes from http://puppet-vagrant-boxes.puppetlabs.com/
+boxes:
+  'tse-master-virtualbox': 'http://tse-builds.s3-us-west-2.amazonaws.com/tse-demo-env/commits/tse-master-virtualbox-2017.2.2-vd151b0b.box'
