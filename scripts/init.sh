@@ -11,6 +11,7 @@ main()
 
   # Bring up the core demo environment infrastructure. That's master and gitlab.
   vagrant up /master/
+  sleep 180
 
   # Iterate over every general-purpose vm in the stack. Demo-specific machines
   # are omitted. Provision them, then shut them down and snapshot them.
