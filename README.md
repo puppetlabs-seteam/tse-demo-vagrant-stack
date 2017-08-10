@@ -36,22 +36,18 @@ The new master is already fully deployed, running with a hostname of `master.inf
 
 #### Credentials
 **_SSH_**:
-`user`: root
-
-`password`: puppetlabs
+  * `user`: root
+  * `password`: puppetlabs
 
 > NOTE: If using vagrant you can simply `vagrant ssh /master/`
 
 **_Enterprise Console_**:
-`user`: admin
-
-`password`: puppetlabs
-
+  * `user`: admin
+  * `password`: puppetlabs
 
 **_Git Server_**:
-`user`: puppet
-
-`password`: puppetlabs
+  * `user`: puppet
+  * `password`: puppetlabs
 
 
 ### Next Steps
