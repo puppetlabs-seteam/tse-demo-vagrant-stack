@@ -40,9 +40,6 @@ roles:
       - type: shell
         name: "puppet_agent"
         path: "scripts/provisioners/puppet_agent_install.ps1"
-    synced_folders:
-      - host_path:  '.files'
-        guest_path: 'c:/seteam-files'
 
   posix_agent:
     private_networks:
