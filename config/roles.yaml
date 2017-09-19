@@ -19,6 +19,9 @@ roles:
 
   windows_agent:
     communicator: winrm
+    providers:
+      - type: virtualbox
+        gui: false
     forwarded_ports:
           - { guest: 5985, host: 35985, auto_correct: true }
           - { guest: 3389, host: 33389, auto_correct: true }
@@ -39,8 +42,9 @@ roles:
       # prior to the reboot.
       - type: shell
         name: "puppet_agent"
-        path: "scripts/provisioners/puppet_agent_install.ps1"
-
+        inline: '[Net.ServicePointManager]::ServerCertificateValidationCallback = {$true}; $webClient = New-Object System.Net.WebClient; $webClient.DownloadFile("https://master.inf.puppet.vm:8140/packages/current/install.ps1", "install.ps1"); .\install.ps1'
+      - type: pe_agent
+        master_vm: "master.inf.puppet.vm"
   posix_agent:
     private_networks:
       - {ip: '0.0.0.0', auto_network: true}
@@ -50,9 +54,8 @@ roles:
         inline: "echo 'nameserver 8.8.8.8' > /etc/resolv.conf"
       - type: hosts
         sync_hosts: true
-      - type: shell
-        name: "puppet_agent"
-        inline: "curl -sk https://master.inf.puppet.vm:8140/packages/current/install.bash | /bin/bash"
+      - type: pe_agent
+        master_vm: "master.inf.puppet.vm"
       - type: shell
         name: "puppet_complete"
         path: "scripts/provisioners/puppet_agent_complete.sh"

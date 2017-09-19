@@ -2,4 +2,7 @@
 ---
 # Boxes from http://puppet-vagrant-boxes.puppetlabs.com/
 boxes:
-  'tse-master-virtualbox': 'http://tse-builds.s3-us-west-2.amazonaws.com/tse-demo-env/commits/tse-master-virtualbox-2017.2.2-v2b8d385.box'
+  'master-virtualbox-v2b8d385': 'http://tse-builds.s3-us-west-2.amazonaws.com/tse-demo-env/commits/tse-master-virtualbox-2017.2.2-v2b8d385.box'
+  'master-virtualbox-v003': 'http://tse-builds.s3-us-west-2.amazonaws.com/tse-demo-env/releases/tse-master-virtualbox-2017.2.2-v0.0.3.box'
+  'win2016_1.0.4': 'http://tse-builds.s3-us-west-2.amazonaws.com/tse-demo-env/boxes/eval-win2016-standard-nocm-1.0.4.box'
+  'win2012r2_1.0.4': 'http://tse-builds.s3-us-west-2.amazonaws.com/tse-demo-env/boxes/eval-win2012r2-standard-nocm-1.0.4.box'

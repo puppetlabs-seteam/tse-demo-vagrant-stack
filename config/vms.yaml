@@ -10,15 +10,8 @@ vms:
   # Puppet Master machine                #
   #======================================#
   - name: "master.inf.puppet.vm"
-    box: "tse-master-virtualbox"
+    box: "master-virtualbox-v003"
     roles: [ "master" ]
-
-  #======================================#
-  # Jenkins machine                      #
-  #======================================#
-  - name: "jenkins.inf.puppet.vm"
-    box: "puppetlabs/centos-7.2-64-nocm"
-    roles: [ "posix_agent" ]
 
   #======================================#
   # General-purpose machines, Portland   #
@@ -36,7 +29,11 @@ vms:
     roles: [ "posix_agent" ]
 
   - name: "server2012r2a.pdx.puppet.vm"
-    box: "windows-server-2012r2-v3"
+    box: "win2012r2_1.0.4"
+    roles: [ "windows_agent" ]
+
+  - name: "server2016a.pdx.puppet.vm"
+    box: "win2016_1.0.4"
     roles: [ "windows_agent" ]
 
   #======================================#
