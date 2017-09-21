@@ -35,26 +35,3 @@ vms:
   - name: "server2016a.pdx.puppet.vm"
     box: "win2016_1.0.4"
     roles: [ "windows_agent" ]
-
-  #======================================#
-  # General-purpose machines, Sydney     #
-  #======================================#
-  - name: "centos6b.syd.puppet.vm"
-    box: "puppetlabs/centos-6.6-64-nocm"
-    roles: [ "posix_agent" ]
-    autostart: false
-
-  - name: "centos7b.syd.puppet.vm"
-    box: "puppetlabs/centos-7.2-64-nocm"
-    roles: [ "posix_agent" ]
-    autostart: false
-
-  - name: "ubuntu1404b.syd.puppet.vm"
-    box: "puppetlabs/ubuntu-14.04-64-nocm"
-    roles: [ "posix_agent" ]
-    autostart: false
-
-  - name: "server2012r2b.syd.puppet.vm"
-    box: "windows-server-2012r2-v3"
-    roles: [ "windows_agent" ]
-    autostart: false
