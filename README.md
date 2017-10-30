@@ -24,9 +24,6 @@ This tool is built on top of a few different technologies, mainly VirtualBox and
 
 In addition, keep in mind the raw cpu and memory requirements.  The master is 2CPU and 8G of memory.
 
-### Windows Box File
-For licensing reasons, we cannot distribute a Windows box as part of this repo.  Prior to use, you will need to update the `config/boxes.yaml' file and add an entry for 'windows-server-2012r2-v3: _url_'.
-
 ## Puppet Master Setup
 ### Quickstart
 After getting the pre-reqs setup, run scripts/init.sh.  This will stand up the master and all configured agents.  For all agents, the will be snapshotted after provisioning and then shutdown.  The master will be left running.  To complete the setup run `vagrant hosts list` and update your hosts file.
