@@ -48,4 +48,7 @@ The new master is already fully deployed, running with a hostname of `master.inf
 
 
 ### Next Steps
-Once the master is up and running, you'll need to add your license key to the master.  Optionally, login to the Git server ([here](http://master.inf.puppet.vm:3000)) and update the puppet users ssh keys with your own public so that you can make updates to the control-repo.  Code manager deployments will not work successfully until you add a license key because there are some PE only modules in use.
+Once the master is up and running, you'll need to add your license key to the master. Code manager deployments will not work successfully until you add a license key because there are some PE only modules in use.
+
+Optional: Login to the Git server ([here](http://master.inf.puppet.vm:3000)) and update the puppet users ssh keys with your own public so that you can make updates to the control-repo.  
+
