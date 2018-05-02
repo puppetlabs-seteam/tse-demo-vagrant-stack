@@ -10,7 +10,7 @@ vms:
   # Puppet Master machine                #
   #======================================#
   - name: "master.inf.puppet.vm"
-    box: "master-virtualbox-v008"
+    box: "master-virtualbox-v009"
     roles: [ "master" ]
 
   #======================================#
