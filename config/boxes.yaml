@@ -8,5 +8,6 @@ boxes:
   'master-virtualbox-v006': 'http://tse-builds.s3-us-west-2.amazonaws.com/tse-demo-env/releases/tse-master-virtualbox-2017.3.1-v0.0.6.box'
   'master-virtualbox-v008': 'http://tse-builds.s3-us-west-2.amazonaws.com/tse-demo-env/releases/tse-master-virtualbox-2017.3.5-v0.0.8.box'
   'master-virtualbox-v009': 'http://tse-builds.s3-us-west-2.amazonaws.com/tse-demo-env/releases/tse-master-virtualbox-2018.1.0-v0.0.8.box'
+  'master-virtualbox-201810-v009': 'http://tse-builds.s3-us-west-2.amazonaws.com/tse-demo-env/releases/tse-master-virtualbox-2018.1.0-v0.0.9.box'
   'win2016_1.0.4': 'http://tse-builds.s3-us-west-2.amazonaws.com/tse-demo-env/boxes/eval-win2016-standard-nocm-1.0.4.box'
   'win2012r2_1.0.4': 'http://tse-builds.s3-us-west-2.amazonaws.com/tse-demo-env/boxes/eval-win2012r2-standard-nocm-1.0.4.box'
