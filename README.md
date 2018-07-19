@@ -20,7 +20,8 @@ This tool is built on top of a few different technologies, mainly VirtualBox and
 * `$ vagrant plugin install oscar`
 * `$ vagrant plugin install vagrant-hosts`
 * `$ vagrant plugin install vagrant-reload`
-* `$ vagrant plugin install vagrant-multiprovider-snap` (optional, but you won't have snapshot functionality if you don't install it)
+4. Install Optional Vagrant Plugins:
+* `$ vagrant plugin install vagrant-multiprovider-snap` (Required for snapshot functionaility in Vagrant versions less than 1.8, functionaility is part of Vagrant core from v1.8 by utilising the "vagrant snapshot" command )
 
 In addition, keep in mind the raw cpu and memory requirements.  The master is 2CPU and 8G of memory.
 
