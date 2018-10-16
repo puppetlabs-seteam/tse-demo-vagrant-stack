@@ -25,7 +25,7 @@ main()
   # problems like how to boot them back up and retain the port settings without
   # losing the shared folders.
   vagrant provision --provision-with hosts,puppet_complete /master/
-  vagrant snap take --name provisioned /master/
+  vagrant snapshot save /master/ provisioned
 
   set +ex
 }
@@ -48,7 +48,7 @@ vagrant_up_snap_down()
 
   vagrant halt "$instance_name"
   assign_ssh_port_forwarding "$instance_name"
-  vagrant snap take --name "$snapshot_name" "$instance_name"
+  vagrant snapshot save "$instance_name" "$snapshot_name"
 }
 
 # Function to work around the fact that Vagrant won't resolve port conflicts
